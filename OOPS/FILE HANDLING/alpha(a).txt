@@ -1,0 +1,1 @@
+My name is cd "d:\C++\SORTING ALGORITHMS\" ; if ($?) { g++ x.cpp -o x } ; if ($?) { .\x }
