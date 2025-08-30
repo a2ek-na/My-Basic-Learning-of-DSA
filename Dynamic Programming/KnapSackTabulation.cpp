@@ -9,7 +9,7 @@ int KnapSack(vector<int> profit, vector<int> weight, int capacity){
 
     for(int i = 1; i < profit.size() + 1; i++){
         Table[i][0] = 0;
-        for(int j = 1; j < capacity  + 1; j++){
+        for(int j = 1; j < capacity + 1; j++){
             if(weight[i-1] > j) Table[i][j] = Table[i-1][j];
             else Table[i][j] = max(Table[i-1][j] , Table[i-1][j-weight[i-1]] + profit[i-1]);
         }
